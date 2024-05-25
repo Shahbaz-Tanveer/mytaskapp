@@ -1,0 +1,70 @@
+
+  
+  .taskTable .pending {
+    background-color: red;
+  }
+  
+  .taskTable .completed {
+    background-color: green;
+  }
+  
+  .taskTable .inprogress {
+    background-color: blue;
+  }
+
+
+.taskTable {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.addButton {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actionButtons button, .actionButtons a {
+    border: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.actionButtons button {
+    color: red;
+}
+
+.actionButtons a {
+    color: blue;
+}
