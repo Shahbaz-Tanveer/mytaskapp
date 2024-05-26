@@ -1,11 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: aliceblue;
+}
+
+.addTask {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.addTaskForm {
+    margin-top: 20px;
+}
+
+.addTaskForm .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.addTaskForm .inputGroup label {
+    margin-bottom: 5px;
+}
+
+.addTaskForm .inputGroup label .required {
+    color: red;
+    margin-left: 5px;
+}
+
+.addTaskForm .inputGroup input,
+.addTaskForm .inputGroup select {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.addTaskForm .inputGroup button {
+    border: 0;
+    outline: none;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.addTask h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.taskTable {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow-x: auto;
+}
+
+.taskTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.taskTable th, .taskTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.taskTable th {
+    background-color: #f4f4f4;
+}
+
+.taskTable .actionButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.addButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.addButton:hover {
+    background-color: darkpurple;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .addTask {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .taskTable th, .taskTable td {
+        padding: 8px;
+    }
+
+    .taskTable .actionButtons {
+        flex-direction: column;
+    }
+
+    .addTaskForm .inputGroup button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .addTask {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .taskTable th, .taskTable td {
+        padding: 5px;
+    }
+
+    .addTaskForm .inputGroup input,
+    .addTaskForm .inputGroup select {
+        padding: 8px;
+    }
+
+    .addTaskForm .inputGroup button {
+        padding: 10px;
+    }
 }
